@@ -19,4 +19,7 @@ def menu():
     return jsonify(body), status
 @app.route('/health')
 def health():
-    return jsonify({"status": "healthy", "version": "1.0"})
+    return jsonify({
+        "status": "healthy",
+        "version": "1.0"
+    })
